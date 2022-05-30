@@ -1,0 +1,46 @@
+EMPTY
+                            
+
+Gammalt saldo: 100.0
+Transaktion intrï¿½ffade: +7302.0
+Ny balans: 7402.0
+
+Gammalt saldo: 7402.0
+Transaktion intrï¿½ffade: -640.0
+Ny balans: 6762.0
+
+Gammalt saldo: 6762.0
+Transaktion intrï¿½ffade: -903992.0
+Ny balans: -897230.0
+
+Gammalt saldo: -897230.0
+Transaktion intrï¿½ffade: +100000000000000.0
+Ny balans: 99999999102770.0
+
+Gammalt saldo: 99999999102770.0
+Transaktion intrï¿½ffade: -9999999999.0
+Ny balans: 99989999102771.0
+
+Gammalt saldo: 99989999102771.0
+Transaktion intrï¿½ffade: -999999999999.0
+Ny balans: 98989999102772.0
+
+Gammalt saldo: 98989999102772.0
+Transaktion intrï¿½ffade: +999999999999.0
+Ny balans: 99989999102771.0
+
+Gammalt saldo: 99989999102771.0
+Transaktion intrï¿½ffade: -9999999999999.0
+Ny balans: 89989999102772.0
+
+Gammalt saldo: 89989999102772.0
+Transaktion intrï¿½ffade: -89989999102771.0
+Ny balans: 1.0
+
+Gammalt saldo: 1.0
+Transaktion intrï¿½ffade: +199.0
+Ny balans: 200.0
+
+Gammalt saldo: 200.0
+Transaktion inträffade: +10000.0
+Ny balans: 10200.0
