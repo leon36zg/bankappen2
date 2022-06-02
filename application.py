@@ -1,10 +1,12 @@
 import math
 import sys 
-
+###introduktion 
 print("Hejjj och väkommna till Leon BANKING SYSTEM!!\n")
 print("provided by LEON BANKING SYSTEM.\n")                       #böjan av koden 
 
+###funktioner 
 def addStartingBalance():
+    ###återställning av startsaldo och gamla loggar
     print("ÅTERSTÄLLA STARTSALDO?")
     addStart = str(input())
     addStart = addStart.lower()
@@ -20,6 +22,7 @@ def addStartingBalance():
     prompt()
 
 def prompt():
+    ###början av koden, funktion som frågar om du vill göra transaktionen
     print("Vill du göra en transaktion?")       #frågan om du vill göra transaktiionen 
     transact = str(input())
     transact = transact.lower()
@@ -40,20 +43,22 @@ def startup(confirm):
         prompt()
 
 def transaction_option():
-    print("\nVill du göra en insättning eller ett uttag")     # vill du göra insättning eller uttag 
+    # vill du göra insättning eller uttag (if, else eller elif)
+    print("\nVill du göra en insättning eller ett uttag")     
     change = str(input(""))
     change = change.lower()
-    if change == "insättning" or change == "i":
+    if change == "insättning" or change == "i":            #du svarar på fråger om du skriver sluta
         deposit_money()
     elif change == "uttag" or change == "u":              
         withdrawMoney()
     elif change == "sluta" or change == "klar":
-        print("Avslutar programmet.....")
-        sys.exit() 
+        print("Avslutar programmet.....")                   #då avslutas programmet 
+        sys.exit()  
     else:
         print("Invalid input")
         
 def checkBalance():
+    #filen som kollar balansen på ditt konto 
     file = open("bankdatan.txt", "r") 
     print("Aktuellt saldo")
     print(file.read())
@@ -72,7 +77,8 @@ def depositAction():
         floatCurrent = float(current)
         file.close()
     
-        print("Hur mycket vill du sätta in?")         #hur mycket vill du sätta in 
+        #hur mycket vill du sätta in 
+        print("Hur mycket vill du sätta in?")         
         addedAmount = input()
         floatAddedAmount = float(addedAmount)
         file = open("bankdatan.txt", "w") 
@@ -96,6 +102,7 @@ def withdrawMoney():
 
 def withdrawalAction():
     try:
+        ###blans, beräknar saldot på kontot
         file = open("bankdatan.txt", "r")
         current = open("bankdatan.txt", "r").read()
         floatCurrent = float(current) 
@@ -119,7 +126,7 @@ def withdrawalAction():
         print("Du angav en ogiltig input...")
 
     
-
+###nytt balans 
 def transactionLogs(floatCurrent, transactionOccured, floatAddedAmount,newAmount):
     LOG = open("Transaction Log.txt", "a")
     oldAmount = floatCurrent
